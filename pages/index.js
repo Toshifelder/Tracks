@@ -1,6 +1,6 @@
 import { client } from "../libs/client";
 import Header from "./header";
-import Footer from "./footer";
+import Hooter from "./hooter";
 import Link from "next/link";
 import Image from "next/image"
 import styles from "../styles/topic.module.scss";
@@ -36,7 +36,7 @@ export default function Home({ works }) {
               </div>
         </div>
       </div>
-      <Footer />
+      <Hooter />
     </>
   )
 }

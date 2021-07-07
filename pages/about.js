@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { client } from "../libs/client";
 import Header from "./header";
-import Footer from "./Footer";
+import Hooter from "./hooter";
 import styles from "../styles/about.module.scss";
 
 export default function Home({ works }) {
@@ -38,7 +38,7 @@ return (
         </li>
       ))}
     </ul>
-    <Footer />
+    <Hooter />
   </>
 );
 }
