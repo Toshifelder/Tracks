@@ -50,10 +50,10 @@ export default function Menu() {
 			</div>
 			<div className={`${styles.nav} ${openMenu ? styles.open : styles.close}`}>
 				<div className={styles.inner}>
-					<ul className={styles.dropdown} ontouchstart={""}>
+					<ul className={styles.dropdown}>
 						<li><Link href={"/"}><a>TOP</a></Link></li>
 						<li><Link href={"/about"}><a>ABOUT</a></Link></li>
-						<li className={styles.works} ontouchstart={""}>
+						<li className={styles.works}>
 							<div><Link href={"/article_list"}><a>WORKS</a></Link></div>
 							<ul className={styles.sub_menu}>
 								<li><Link href={"/exhibition"}><a>EXHIBITION</a></Link></li>
