@@ -1,0 +1,73 @@
+.main {
+	margin-top: 15%;
+}
+
+.top_Tracks {
+	font-size: 12vw;
+	font-weight: bold;
+	padding-left: 48%;
+}
+
+.topic {
+	padding-bottom: 10%;
+	margin-top: 20%;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	list-style-type: none;
+	& > .topic_eyeCatch, & > .topic_caption {
+		position: relative;
+		width: 46%;
+		height: auto;
+		margin: 2%;
+		overflow: hidden;
+	}
+	& > .topic_eyeCatch:before, & > .topic_caption {
+		content: "";
+		display: block;
+	}
+}
+
+.feature_topic {
+	top: 0;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.topic_title {
+	padding-top: 5%;
+	font-size: 3vw;
+}
+
+.sub_title {
+	font-size: 3vw;
+}
+
+.topic_description {
+	padding-top: 5%;
+	font-size: 1.5vw;
+}
+
+.moreButton {
+	position: absolute;
+	bottom: 1%;
+	display: flex;
+}
+
+.moreView {
+	font-size: 1.5vw;
+	white-space: nowrap;
+	padding: 3%;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+}
+
+.moreContents {
+	font-size: 1.5vw;
+	white-space: nowrap;
+	padding: 3%;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}

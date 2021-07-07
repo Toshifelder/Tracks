@@ -1,0 +1,61 @@
+
+.main {
+	margin-top: 15%;
+}
+
+.top_works {
+	font-size: 12vw;
+	font-weight: bold;
+	padding-left: 48%;
+}
+
+.article_title {
+	display: block;
+	font-size: 1.2vw;
+	padding-top: 4%;
+}
+
+/*
+3collum
+*/
+
+.article_list {
+	margin-left: -3.5%;
+	margin-top: 10%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	list-style-type: none;
+}
+
+@media screen and (max-width:480px) {
+	.article_list {
+		margin-left: -10%;
+	}
+}
+
+.article {
+	margin: 5%;
+}
+
+/*
+responsible
+*/
+// .article_list {
+// 	display: flex;
+// 	display: -webkit-flex;
+// 	flex-wrap: wrap;
+// 	-webkit-flex-wrap: wrap;
+// 	list-style-type: none;
+// 	& > article {
+// 		position: relative;
+// 		width: 31%;
+// 		height: auto;
+// 		margin: 1%;
+// 		overflow: hidden;
+// 	}
+// 	& > article:before {
+// 		content: "";
+// 		display: block;
+// 		padding-top: 100%;
+// 	}
+// }
