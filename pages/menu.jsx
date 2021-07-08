@@ -55,11 +55,13 @@ export default function Menu() {
 						<li><Link href={"/about"}><a>ABOUT</a></Link></li>
 						<li className={styles.works}>
 							<div><Link href={"/article_list"}><a>WORKS</a></Link></div>
-							<ul className={styles.sub_menu}>
-								<li><Link href={"/exhibition"}><a>EXHIBITION</a></Link></li>
-								<li><Link href={"/text"}><a>TEXT</a></Link></li>
-								<li><Link href={"/video"}><a>VIDEO</a></Link></li>
-							</ul>
+								{/* <div className={styles.sub_innner}> */}
+									<ul className={styles.sub_menu}>
+										<li><Link href={"/exhibition"}><a>EXHIBITION</a></Link></li>
+										<li><Link href={"/text"}><a>TEXT</a></Link></li>
+										<li><Link href={"/video"}><a>VIDEO</a></Link></li>
+									</ul>
+								{/* </div> */}
 						</li>
 					</ul>
 				</div>

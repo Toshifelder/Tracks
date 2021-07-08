@@ -88,8 +88,9 @@
 
   /* Reset list styles */
   list-style-type: none;
-  margin: 20% 10%;
-  padding: 0;
+  justify-content: center;
+  margin: 20% auto;
+  padding-left: 0;
 }
 
 .dropdown li {
@@ -163,45 +164,59 @@
 
 
 @media screen and (max-width: 1024px) {
-  .nav {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 100%;
-    bottom: 0;
-    width: 100%;
-    background: #ffffff;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    transition: all .5s;
-    z-index: 100;
-		opacity: 0;
-  }
+  // .nav {
+  //   display: block;
+  //   position: fixed;
+  //   top: 0;
+  //   left: 100%;
+  //   bottom: 0;
+  //   width: 100%;
+  //   background: #ffffff;
+  //   overflow-x: hidden;
+  //   overflow-y: auto;
+  //   -webkit-overflow-scrolling: touch;
+  //   transition: all .5s;
+  //   z-index: 100;
+	// 	opacity: 0;
+  // }
   .nav .inner {
-		margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
-  .nav .inner ul {
-		display: block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .nav .inner ul li {
-		position: relative;
-    margin: 0;
-  }
-  .nav .inner ul li a {
-		display: flex;
-		color: #333;
-		font-size: 24px;
-		padding: 1em 5em;
-		margin: 0;
-		text-decoration: none;
-		transition-duration: 0.2s;
-  }
+  // .nav .inner ul {
+	// 	display: block;
+  //   list-style: none;
+  //   margin: 0;
+  //   padding: 0;
+  // }
+  // .nav .inner ul li {
+	// 	position: relative;
+  //   margin: 0;
+  // }
+  // .nav .inner ul li a {
+	// 	display: flex;
+	// 	color: #333;
+	// 	font-size: 24px;
+	// 	padding: 1em 5em;
+	// 	margin: 0;
+	// 	text-decoration: none;
+	// 	transition-duration: 0.2s;
+  // }
   .dropdown {
     display: block;
+    text-align: left;
+    list-style-position: inside;
+    padding: 0;
+  }
+  .works {
+    display: flex;
+    justify-content: center;
+  }
+  .sub_menu {
+    display: block;
+    text-align: left;
+    list-style-position: inside;
+    padding: 0;
   }
 }
 /*============
