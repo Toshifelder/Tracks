@@ -1,3 +1,3 @@
-デザインチームGRIDIN'のブログサイトデモ(一部未実装)
+デザインチームGRIDIN'のブログサイトデモ
 
-技術: JavaScript, Next.js, microCMS(ヘッドレスCMS), Vercel
+技術: JavaScript, Next.js, Vercel, microCMS(ヘッドレスCMS)
