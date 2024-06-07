@@ -2,7 +2,7 @@ import { client } from "../libs/client";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "./header";
-import Hooter from "./hooter";
+import Footer from "./footer";
 import styles from "../styles/exhibition.module.scss";
 
 export default function Home({ works }) {
@@ -32,7 +32,7 @@ return (
 					))}
 			</ul>
 		</div>
-    <Hooter />
+    <Footer />
   </>
 );
 }

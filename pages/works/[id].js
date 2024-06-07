@@ -1,16 +1,25 @@
+import Image from "next/image";
 import { client } from "../../libs/client";
+import styles from "../../styles/article.module.scss";
+import Header from "../header";
+import Footer from "../footer";
 
 export default function worksId({ works }) {
   return (
-    <main>
-      <h1>{works.title}</h1>
-      <p>{works.publishedAt}</p>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `${works.body}`,
-        }}
-      />
-    </main>
+    <>
+      <Header />
+        <main className={styles.main}>
+          <h1 className={styles.title}>{works.title}</h1>
+          <Image src={works.eyeCatch.url} width={800} height={500} objectFit={"cover"}/>
+          <p className={styles.publishedAt}>{works.publishedAt}</p>
+          <div className={styles.works}
+            dangerouslySetInnerHTML={{
+              __html: `${works.body}`,
+            }}
+          />
+        </main>
+      <Footer />
+    </>
   );
 }
 

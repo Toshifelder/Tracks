@@ -3,7 +3,7 @@ import Image from "next/image";
 import { client } from "../libs/client";
 import styles from "../styles/article_list.module.scss"
 import Header from "./header";
-import Hooter from "./hooter";
+import Footer from "./footer";
 
 export default function Home({ works }) {
   return (
@@ -28,7 +28,7 @@ export default function Home({ works }) {
           ))}
         </ul>
       </div>
-      <Hooter />
+      <Footer />
     </>
   );
 }
